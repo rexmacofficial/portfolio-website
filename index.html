@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>rex mac 2</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 </head>
 
 <body>
 
     <header>
-
+        <div class="container">
         <div>
-            <img src="img/rex_mac_logo_dope_font.png" alt="rex_mac_logo">
+            <img class="logo" src="img/rex_mac_logo_dope_font.png" width="300" height="119">
         </div>
         <nav>
             <ul>
@@ -19,31 +31,37 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-
+        </div>
     </header>
-
-    <div>
-        <div>work_samples</div>
-    </div>
     
     <main>
-        <div> <!-- orange -->
-            <div> <!-- hero section -->
-                <h1><!-- black -->
+       <div class="container"> <!-- <div> orange -->
+            <div id="hero"> <!-- hero section --> 
+                <h4><!-- black -->
                     Hey there, Rex here. 
                     <br><!-- brown -->
-                        <span>I'm a UI Designer, based in Boston, Massachusetts.
+                        <span>
+                            
+                            <p>I'm a UI Designer, based in Boston, Massachusetts.</p>
         
-                            Over the past decade, I've also served as a website & social media manager, graphic designer, and video editor. 
+                            <p>Over the past decade, I've also served as a website & social media manager, graphic designer, and video editor. </p>
         
-                            I'm here to nail the look and feel - to help brands visually define themselves.</span>
-                </h1>
-                <p>Catch my latest work below.</p>
+                            <p>I'm here to nail the look and feel - to help brands visually define themselves.</p>
+                        
+                            <p>Catch my latest work below.</p>
+                        
+                        </span>
+                        </h4>
+                </div>
             </div> <!-- hero section ends -->
-            <div> <!-- work section -->
-                <h2><!-- blue -->
+            <div class="container">
+            <div id="work"> <!-- work section -->
+                <h1><!-- blue -->
                         My Work
-                </h2>
+                </h1>
+
+                <div class="row"> <!-- line space after above text -->
+
             <div><!-- open row that holds (2) columns for project -->
                     <div><!-- open first column (used for image) -->
 
@@ -53,42 +71,56 @@
                       </picture>
                     </div><!-- end first column -->
                     <div><!-- open second column (used for text) -->
-                      <h3>Eaufactory</h3><!-- heading for the project -->
+                      <h2>Eaufactory</h2><!-- heading for the project -->
                       <p><!-- open paragraph -->
                         A fragrance app for iOS.
                       </p><!-- end paragraph -->
-                      <a href="eaufactory.html">Read more</a><!-- button or link label -->
-                      
+
+                      <div class="row"> <!-- line space after above text -->
+
+                      <a href="eaufactory.html" class="button">Read more.</a><!-- button or link label -->                      
                     </div><!-- end second column -->
                   </div><!-- end row that holds (2) columns for project -->
+                </div>
             </div> <!-- work section ends  -->
-        </div>
+        </div> <!-- </div> -->
     </main>
 
 <footer>
-    <div>
-        <h2>Get in Touch</h2>
+    <div id="contact">
+        <div class="container">
+        <h1>Get in Touch</h1>
             
+        <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+
         <p>
-        Do you like my work and want to discuss opportunities? Please get in touch. 
-        
-        Call: <a href="tel:+5082715561">+508 271-5561</a>. Prefer sending an email?
+            Call: <a href="tel:+5082715561">+508 271-5561</a>.
         </p>
-        
-        <div>
-            <a href="mailto:rexmacofficial@gmail.com">Email me here.</a>
-        </div>
+
+        <p>
+        Prefer email?
+
+        <a href="mailto:rexmacofficial@gmail.com" class="button">Email me here.</a> <!-- button or link label -->                      
+
+        </p>
+
+        <div class="row"> <!-- line space after above text -->
+
 
         <div>
             <!--Social Media Layout and Placeholders-->
-            <a href="https://www.linkedin.com/in/rexmacdesign/" target="_blank">
+            <a class="logo" href="https://www.linkedin.com/in/rexmacdesign/" target="_blank"> 
                 <img src="img/linkedin.svg" alt="Linkedin icon">
             </a>
-            <a href="https://www.instagram.com/rexmacofficial" target="_blank">
+            <a class="logo" href="https://www.instagram.com/rexmacofficial" target="_blank">
                 <img src="img/instagram.svg" alt="Instagram icon">
             </a>
             </div>
+
+            <div class="row"> <!-- line space after above text -->
+
             <p>Copyright Rex Macapinlac 2023</p>
+        </div>
     </div>
 </footer>
 
