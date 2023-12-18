@@ -182,6 +182,9 @@ border-bottom: 3px solid #000000;
   padding-top: 50px;
 	padding-bottom: 15px;
   border-bottom: 3px solid #000000;  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  display:  block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #projectpic {
