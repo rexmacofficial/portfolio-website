@@ -52,7 +52,7 @@ body {
 
   font-family: 'Space Mono', sans-serif;
 
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
@@ -144,15 +144,11 @@ border-bottom: 3px solid #000000;
 
 }
 
-#hero {
+#hero span {
   background-color: #000000;
   padding: 20px 0;
-
-}
-
-/* #work {
-  padding: 20px;
-}  */
+ 
+  }
 
 #contact {
   font-size: 14px;
@@ -174,6 +170,10 @@ border-bottom: 3px solid #000000;
   padding-top: 50px;
 	padding-bottom: 15px;
   border-bottom: 3px solid #000000;  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  display:  block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .eaupics {
@@ -184,21 +184,33 @@ border-bottom: 3px solid #000000;
   border-bottom: 3px solid #000000;  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 }
 
+#projectpic {
+  width: 50%;
+}
+
 /* layout styling  */
 .container {
   padding: 20px;
 }
 
-.row {
-  margin: 30px 0; /* 25px top and bottom, 0 left and right */
-}
+/* NEW STYLE  */
 
+    #work .row {
+      padding-bottom: 16px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
 /* styling for col- */
 
 [class*="col-"] {
   float: left;
-  padding: 0;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 .row::after {
@@ -216,3 +228,82 @@ border-bottom: 3px solid #000000;
   margin: auto;
   max-width: 688px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) 
+
+    {
+      header {
+        text-align: unset;
+        padding: 20px 0 13px;
+
+        
+      }
+
+            /* NEW STYLE */
+            #constraints-flex {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+
+      nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+    }
+
+    .col-md-6 {
+      width: 50%;
+    }
+
+
+    #hero span {
+        display: block;
+      }
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+    .constraints {
+      margin: 16px 0 32px 0;
+    }
+
+    .constraints-flex-img {
+      width: 100%;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .col-lg-3 {
+      width: 25%;
+    }
+
+    .col-lg-4 {
+      width: 33.33%;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+    }
+
+    .text-block {
+      width: 100%;
+      margin: auto;
+      max-width: 688px;
+    }
