@@ -116,10 +116,18 @@ border-bottom: 3px solid #000000;
   background-color: #ffffff;
   color: #000000; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 25px solid #000000; /* width of the border, type, color */
+  border-bottom: 40px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-duration: 0.8s;
+  transition-property: opacity;
+  }
+
+  .button:hover {
+    opacity: 0.8;
+  }
 
   .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -131,7 +139,7 @@ border-bottom: 3px solid #000000;
   }
 
   a {/* element selector */
-    color: red;
+    color: rgb(255, 255, 255);
   }
 
   #my-link {/* id selector */
@@ -141,8 +149,6 @@ border-bottom: 3px solid #000000;
   .my-link {/* class selector */
     color: blue;  
   }
-
-}
 
 #hero span {
   background-color: #000000;
@@ -188,7 +194,7 @@ border-bottom: 3px solid #000000;
 }
 
 #projectpic {
-  width: 50%;
+  width: 100%;
 }
 
 /* layout styling  */
@@ -196,7 +202,13 @@ border-bottom: 3px solid #000000;
   padding: 20px;
 }
 
-/* NEW STYLE  */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NEW STYLES  */
 
     #work .row {
       padding-bottom: 16px;
@@ -230,6 +242,38 @@ border-bottom: 3px solid #000000;
   width: 100%;
   margin: auto;
   max-width: 688px;
+}
+
+@keyframes color-change {
+
+  0% {fill: #00ff15;}
+  50% {fill: #c900ed;}
+  100% {fill: #ff5900;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -267,6 +311,8 @@ Medium devices (640px and larger)
     #hero span {
         display: block;
       }
+
+      #about-page h3 { margin-top: 0;}
 
 
 /* ==============================
