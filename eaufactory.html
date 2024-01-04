@@ -22,18 +22,23 @@
 <body>
 
   <header>
-    <div class="container">
-        <img class="logo" src="img/rex_mac_logo_dope_font.png" alt="rex mac in white text">
-            <nav> <!-- navigation -->
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav> <!-- navigation -->
+
+    <div class="container"> <!-- container begins -->
+        <div class="navtoggle" id="myNavtoggle"> <!-- burger -->
+            <img class="logo" src="img/rex_mac_logo_dope_font.png" alt="rex mac in white text">
+                <nav> <!-- navigation -->
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact"onclick="menuToggle()">Contact </a></li> 
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav> <!-- navigation -->
+    </div> <!-- container ends -->
     </div>
-  </header>
+
+</header>
+
     <main>
       
                 <div class="container"> <!-- container begins -->
@@ -181,6 +186,11 @@
       </div> <!-- social media icons and copyright ends -->
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
 
 </body>
 
